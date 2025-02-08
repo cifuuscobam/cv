@@ -1,0 +1,212 @@
+/* bibbia grafica */
+body,
+html {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+img {
+    height: auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.6rem;
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    background: #f5e7eb;
+}
+
+/*bottoni*/
+
+.button {
+    background: #F5E;
+    display: inline-block;
+    padding: 15px 20px;
+    color: ghostwhite;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background: aqua;
+    color: #333;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 30px 10%;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu a {
+    padding: 15px 20px;
+    display: block;
+    color: #666;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #F5E;
+}
+
+.menu li {
+    display: inline-block;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-left: 20px;
+        padding-left: 60px;
+        position: relative;
+        background-color: white;
+    }
+
+
+    .menu {
+        position: absolute;
+        top: 108px;
+        right: -100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+}
+
+/*hero*/
+
+.hero {
+    display: flex;
+    padding: 3% 10%;
+}
+
+.hero_text {
+    width: 60%;
+    padding: 7% 30px;
+}
+
+.hero_image {
+    width: 40%;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero_text,
+    .hero_image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.img-res {
+    width: 100%;
+    height: auto;
+}
+
+.formazione {
+    display: flex;
+    padding: 5px 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribuisce lo spazio tra gli elementi */
+    align-items: center;
+    /* Allinea gli elementi verticalmente al centro */
+
+    /* Aggiungi questa proprietà per permettere al contenuto di adattarsi alla larghezza */
+}
+
+.testo_formazione {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.image_formazione {
+    width: 100%;
+
+    /* Imposta l'altezza a "auto" per mantenere le proporzioni */
+
+
+    padding-left: 100px;
+
+    /* Centra l'immagine verticalmente */
+}
+
+@media (max-width: 768px) {
+
+    .image_formazione img {
+        max-width: 100%;
+        /* Impedisce che l'immagine esca dalla pagina */
+        /* Mantiene le proporzioni corrette dell'immagine */
+
+    }
+}
